@@ -23,9 +23,11 @@ public class qqq {
             }
         }
 
-        for (Map.Entry<Integer, Integer> entry : like.entrySet()) {
+        Iterator it = like.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry<Integer, Integer> entry = (Map.Entry<Integer, Integer>) it.next();
             if (entry.getValue() < minLikeThreshold) {
-                like.remove(entry.getKey());
+                it.remove();
             }
         }
 
