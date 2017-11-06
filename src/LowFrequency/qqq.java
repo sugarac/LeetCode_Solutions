@@ -5,7 +5,7 @@ import java.util.*;
 public class qqq {
     int[] getRecommendedTweets(int[][] followGraph_edges, int[][] likeGraph_edges,
                                int targetUser, int minLikeThreshold) {
-        Set<Integer> follow = new HashSet<>();
+        Set<Integer> follow = new HashSet<Integer>();
         for (int i = 0; i < followGraph_edges.length; i++) {
             if (followGraph_edges[i][0] == targetUser) {
                 follow.add(followGraph_edges[i][1]);
