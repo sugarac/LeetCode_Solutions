@@ -11,6 +11,7 @@ public class SurroundedRegions {
         if (row == 0) {
             return;
         }
+
         int col = board[0].length;
 
         for (int i = 0; i < row; i++) {
