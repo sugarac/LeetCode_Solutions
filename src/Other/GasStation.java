@@ -26,6 +26,7 @@ public class GasStation {
                 curRest = 0;
             }
         }
+
         return preLack + curRest >= 0 ? start : -1;
     }
 }
