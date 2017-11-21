@@ -3,7 +3,7 @@ package Other;
 public class IsomorphicStrings {
     /**
      * Solution1: O(n); O(1)
-     * Store the previous seen positions of current (i-th) characters in both strings.
+     * Store the previous seen positions of current i-th characters in both strings.
      * If previously stored positions are different then we know that the fact they're occurring
      * in the current i-th position simultaneously is a mistake.
      * We could use a map for storing but as we deal with chars which are basically ints and
