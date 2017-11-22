@@ -5,7 +5,13 @@ import java.util.Map;
 
 public class ContainsDuplicateIII {
     /**
-     *
+     * Solution1: HashMap O(n); O(n)
+     * Check if t < 0. Use long type to avoid overflow.
+     * Maintain a sliding window, the window’s right is at i, the window’s left is k steps back.
+     * Use the idea of Bucket Sort to classify the number to corresponding bucket, whose size is t +1.
+     * Use HashMap to store bucket id and number.
+     * If there are two item with difference <= t, one of the two will happen:
+     * (1) the two in the same bucket, (2) the two in neighbor buckets.
      */
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         if (t < 0) {
