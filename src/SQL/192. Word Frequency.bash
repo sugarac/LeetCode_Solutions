@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # tr -s: truncate the string with target string, but only remaining one instance (e.g. multiple whitespaces)
 # sort: To make the same string successive so that uniq could count the same string fully and correctly.
 # uniq -c: uniq is used to filter out the repeated lines which are successive, -c means counting
