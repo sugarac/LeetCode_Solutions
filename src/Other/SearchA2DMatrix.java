@@ -1,6 +1,11 @@
 package Other;
 
 public class SearchA2DMatrix {
+    /**
+     * Solution1: Binary Search O(logn); O(1)
+     * Treat the 2D matrix as a sorted list.
+     * Locate the middle number by that row is middle index divide n and col is middle index mod n.
+     */
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length;
         if (m == 0) {
@@ -16,7 +21,7 @@ public class SearchA2DMatrix {
             if (midNum == target) {
                 return true;
             }
-            if (midNum < target){
+            if (midNum < target) {
                 start = mid + 1;
             } else {
                 end = mid - 1;
